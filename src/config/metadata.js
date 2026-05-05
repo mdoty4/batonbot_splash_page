@@ -5,7 +5,7 @@
  * Used with react-helmet-async to inject SEO tags at runtime.
  */
 
-const siteUrl = 'https://localchain.ai';
+const siteUrl = 'https://localchainai.com';
 const ogImage = `${siteUrl}/og-image.png`;
 
 export const metadata = {
