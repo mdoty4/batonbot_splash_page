@@ -247,13 +247,13 @@ export function HeroSection() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="flex flex-wrap items-center gap-4 mb-10"
             >
-              <a href="https://github.com/mdoty4/batonbot_splash_page" className="btn-primary">
+              <a href="https://github.com/mdoty4/batonbot" className="btn-primary">
                 Get Started
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="https://github.com/mdoty4/batonbot_splash_page" className="btn-secondary">
+              <a href="https://github.com/mdoty4/batonbot" className="btn-secondary">
                 <svg className="mr-2 w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
@@ -373,7 +373,7 @@ function HeroInstallationSnippet() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('git clone https://github.com/mdoty4/batonbot_splash_page.git && cd batonbot && npm install');
+    navigator.clipboard.writeText('git clone https://github.com/mdoty4/batonbot.git && cd batonbot && npm install');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -382,7 +382,7 @@ function HeroInstallationSnippet() {
     <div className="inline-flex items-center gap-3 bg-background-secondary border border-border rounded-code px-4 py-3 shadow-code-block group">
       <span className="text-teal text-code-xs font-mono">$</span>
       <code className="text-text-primary text-code-xs font-mono">
-        git clone https://github.com/mdoty4/batonbot_splash_page.git && cd batonbot && npm install
+        git clone https://github.com/mdoty4/batonbot.git && cd batonbot && npm install
       </code>
       <motion.button
         whileHover={{ scale: 1.1 }}

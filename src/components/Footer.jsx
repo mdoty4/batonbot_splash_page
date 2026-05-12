@@ -4,7 +4,7 @@ export function Footer() {
   const socialLinks = [
     {
       label: 'GitHub',
-      href: 'https://github.com/mdoty4/batonbot_splash_page',
+      href: 'https://github.com/mdoty4/batonbot',
       icon: (
         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
           <path d="M10 0C4.47 0 0 4.47 0 10c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48
@@ -72,7 +72,7 @@ export function Footer() {
             <a href="#installation" className="text-body-sm text-text-secondary hover:text-text-primary transition-colors">
               Installation
             </a>
-            <a href="https://github.com/mdoty4/batonbot_splash_page" className="text-body-sm text-text-secondary hover:text-text-primary transition-colors">
+            <a href="https://github.com/mdoty4/batonbot" className="text-body-sm text-text-secondary hover:text-text-primary transition-colors">
               GitHub
             </a>
           </nav>

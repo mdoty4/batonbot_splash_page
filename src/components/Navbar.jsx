@@ -4,7 +4,7 @@ const navLinks = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Demo', href: '#tutorials' },
-  { label: 'GitHub', href: 'https://github.com/mdoty4/batonbot_splash_page' },
+  { label: 'GitHub', href: 'https://github.com/mdoty4/batonbot' },
 ];
 
 export function Navbar() {

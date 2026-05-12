@@ -6,7 +6,7 @@ export function InstallationSection() {
   const [copied, setCopied] = useState(false);
 
   const commands = [
-    { comment: '# Clone the repository', cmd: 'git clone https://github.com/mdoty4/batonbot_splash_page.git' },
+    { comment: '# Clone the repository', cmd: 'git clone https://github.com/mdoty4/batonbot.git' },
     { comment: '# Enter the project directory', cmd: 'cd batonbot' },
     { comment: '# Install dependencies', cmd: 'npm install' },
     { comment: '# Create .env file with PORT=4321', cmd: 'echo "PORT=4321" > .env' },
