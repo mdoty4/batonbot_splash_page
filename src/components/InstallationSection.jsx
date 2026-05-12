@@ -6,8 +6,8 @@ export function InstallationSection() {
   const [copied, setCopied] = useState(false);
 
   const commands = [
-    { comment: '# Clone the repository', cmd: 'git clone https://github.com/mdoty4/localchainai.git' },
-    { comment: '# Enter the project directory', cmd: 'cd localchainai' },
+    { comment: '# Clone the repository', cmd: 'git clone https://github.com/mdoty4/batonbot_splash_page.git' },
+    { comment: '# Enter the project directory', cmd: 'cd batonbot' },
     { comment: '# Install dependencies', cmd: 'npm install' },
     { comment: '# Create .env file with PORT=4321', cmd: 'echo "PORT=4321" > .env' },
     { comment: '# Start the server', cmd: 'npm start' },
@@ -119,7 +119,7 @@ export function InstallationSection() {
                   <div>✓ Environment configured</div>
                   <div>✓ Server running on http://localhost:4321</div>
                   <div className="mt-2 text-teal">
-                    ▸ LocalChain AI ready. Open your browser to get started.
+                    ▸ Batonbot ready. Open your browser to get started.
                   </div>
                 </motion.div>
               </pre>

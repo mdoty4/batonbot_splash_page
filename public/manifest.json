@@ -1,7 +1,7 @@
 {
-  "name": "LocalChain AI | Automate Your AI Workflow & Reclaim Your Time",
-  "short_name": "LocalChain AI",
-  "description": "Stop chatting, start living. Build autonomous, local-first AI agent pipelines that handle the heavy lifting so you can step away from the screen.",
+  "name": "Batonbot | Local AI Agent Orchestrator",
+  "short_name": "Batonbot",
+  "description": "The multipurpose, agnostic agentic runtime for personal and team AI orchestration. Connect your favorite local AI models and cloud APIs to build powerful, autonomous agent pipelines.",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#8B5CF6",

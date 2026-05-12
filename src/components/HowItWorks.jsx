@@ -4,53 +4,47 @@ export function HowItWorks() {
   const steps = [
     {
       number: '01',
-      title: 'Create Nodes',
+      title: 'Describe',
       description:
-        'Drag nodes onto the canvas and define each step — set prompts, configure inputs and outputs. Build your AI pipeline visually, like drawing an architecture diagram.',
+        'Tell Batonbot what you need done. Each task is a plain-language instruction — no code, no config, no prompt templates.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-accent">
-          <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M8 12H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M12 8V16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M16 3L21 8L8 21H3V16L16 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+          <path d="M14 5L19 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       ),
     },
     {
       number: '02',
-      title: 'Connect Steps',
+      title: 'Arrange',
       description:
-        'Link nodes together to create your workflow. Draw connections between steps to define how data flows through your sequence, building a visual pipeline that tells the story of your process.',
+        'Set the execution order. Drag tasks into the sequence that makes sense for your workflow. First, second, third — you decide.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-teal">
-          <circle cx="6" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="18" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M8.5 12H15.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M8 6H20M8 12H20M8 18H20M4 6H4.01M4 12H4.01M4 18H4.01" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       ),
     },
     {
       number: '03',
-      title: 'Choose Models & Tools',
+      title: 'Execute',
       description:
-        'Assign the right model or tool to each node. Use Claude for reasoning, GPT for generation, a local model for sensitive code, or plug in APIs and scripts — mix and match freely.',
+        'Hit run. Watch each agent complete its task and produce real output. Track progress, catch issues, stay in control.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-teal">
-          <circle cx="12" cy="6" r="3" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="5" cy="18" r="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="19" cy="18" r="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M10 8L7 15" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M14 8L17 15" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+          <polygon points="6,4 20,12 6,20" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
         </svg>
       ),
     },
     {
       number: '04',
-      title: 'Run, Inspect, Repeat',
+      title: 'Review',
       description:
-        'Hit play and watch your pipeline execute node by node. Inspect intermediate outputs, catch issues early, tweak the flow, and run again. Repeatable, reproducible, fully yours.',
+        'Inspect results at every step. Tweak a task, adjust the order, and re-run. Repeatable, reproducible, fully yours.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-teal">
-          <polygon points="8,4 20,12 8,20" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
+          <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M9 12L11 14L15 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
     },
@@ -66,9 +60,9 @@ export function HowItWorks() {
         {/* Section Header with Scroll Reveal */}
         <ScrollReveal>
           <header className="section-header">
-            <h2 id="how-it-works-heading">Create. Connect. Run. Repeat.</h2>
+            <h2 id="how-it-works-heading">Describe. Arrange. Execute. Review.</h2>
             <p className="max-w-xl mx-auto">
-              Build AI pipelines visually: create nodes, wire them together, pick the best models and tools for each step, then run and iterate — all on a single canvas.
+              From idea to output in four steps. Tell your agents what to do, set the order, and watch real work get done.
             </p>
           </header>
         </ScrollReveal>

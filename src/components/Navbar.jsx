@@ -4,7 +4,7 @@ const navLinks = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Demo', href: '#tutorials' },
-  { label: 'GitHub', href: 'https://github.com/mdoty4/localchainai' },
+  { label: 'GitHub', href: 'https://github.com/mdoty4/batonbot_splash_page' },
 ];
 
 export function Navbar() {
@@ -29,11 +29,11 @@ export function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 text-text-primary font-bold text-card-md tracking-tight">
           <img
-            src="/logo.png"
-            alt="LocalChain AI"
+            src="/ChatGPT Image May 8, 2026 at 09_48_34 PM.png"
+            alt="Batonbot"
             className="h-8 w-auto"
           />
-          LocalChain AI
+          Batonbot
         </a>
 
         {/* Desktop Links */}

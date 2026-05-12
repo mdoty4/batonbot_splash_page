@@ -5,19 +5,46 @@ export function FeatureGrid() {
     {
       icon: (
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-accent">
-          <rect x="2" y="2" width="10" height="10" rx="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <rect x="16" y="2" width="10" height="10" rx="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <rect x="2" y="16" width="10" height="10" rx="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <rect x="16" y="16" width="10" height="10" rx="2.5" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M12 7H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M12 21H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M7 12V16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M21 12V16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M6 4H18C19.1 4 20 4.9 20 6V14C20 15.1 19.1 16 18 16H6C4.9 16 4 15.1 4 14V6C4 4.9 4.9 4 6 4Z" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M8 8H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M8 11H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M18 16V22L14 20V16" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+          <path d="M20 18H24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M22 16V20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       ),
-      title: 'Visual Workflow Chains',
+      title: 'Describe Any Task',
       description:
-        'Stop thinking in linear threads. Map your AI pipeline on a visual canvas — connect agents, chain prompts, and trace data flow from start to finish. What you design is what you run.',
+        'Tell an agent what you need in plain language. No prompt engineering, no rigid templates — just describe the work and let it run.',
+    },
+    {
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-teal">
+          <path d="M5 14L11 20L23 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="14" cy="14" r="10" stroke="currentColor" strokeWidth="1.5" />
+        </svg>
+      ),
+      title: 'Agents That Deliver',
+      description:
+        'These are not chatbots. Batonbot agents research, write, code, analyze, and produce real output you can use. Confidence built in.',
+    },
+    {
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-teal">
+          <path d="M6 7H22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M6 14H22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M6 21H22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <circle cx="10" cy="7" r="1.5" fill="currentColor" />
+          <circle cx="18" cy="14" r="1.5" fill="currentColor" />
+          <circle cx="14" cy="21" r="1.5" fill="currentColor" />
+          <path d="M9 5V9" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M17 12V16" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M13 19V23" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+        </svg>
+      ),
+      title: 'You Set the Order',
+      description:
+        'Drag tasks into the sequence that makes sense. Research before drafting. Testing before deployment. Your workflow, your rules.',
     },
     {
       icon: (
@@ -28,56 +55,24 @@ export function FeatureGrid() {
           <path d="M14 19.5V21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       ),
-      title: 'Local-First Execution',
+      title: 'Local-First Privacy',
       description:
-        'Every node runs on your machine. Your codebase, your prompts, your agent outputs — none of it leaves your control. The orchestrator is always local. Always yours.',
-    },
-    {
-      icon: (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-teal">
-          <circle cx="14" cy="8" r="4" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="6" cy="22" r="3.5" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="22" cy="22" r="3.5" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="14" cy="22" r="3.5" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M11 11L8 18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M17 11H17.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M17 11L20 18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-        </svg>
-      ),
-      title: 'Local + Frontier Models',
-      description:
-        'Mix open-weight local models with frontier API models in the same pipeline. Use Llama for private drafts, Claude for reasoning, GPT for polish — assign the right model to the right stage.',
+        'Everything runs on your machine. Your codebase, your prompts, your agent outputs — none of it leaves your control.',
     },
     {
       icon: (
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-accent">
-          <path d="M8 4H20C21.1 4 22 4.9 22 6V22C22 23.1 21.1 24 20 24H8C6.9 24 6 23.1 6 22V6C6 4.9 6.9 4 8 4Z" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M10 10H18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M10 14H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M10 18H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <circle cx="14" cy="14" r="10" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M14 4C17 7 19 10 19 14C19 18 17 21 14 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M14 4C11 7 9 10 9 14C9 18 11 21 14 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M4 14H24" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M6 9H22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
+          <path d="M6 19H22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
         </svg>
       ),
-      title: 'Agents, Tools & Scripts',
+      title: 'Inspect & Iterate',
       description:
-        'Plug in custom agents, CLI tools, and shell scripts as nodes in your workflow. Chain a linter, a test runner, and an AI reviewer into a single automated pipeline.',
-    },
-    {
-      icon: (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-accent">
-          <rect x="3" y="6" width="8" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
-          <rect x="17" y="6" width="8" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M11 10H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M11 14H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M11 18H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M6 10H6.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M20 10H20.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M6 18H6.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M20 18H20.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-        </svg>
-      ),
-      title: 'Parallel Workflows',
-      description:
-        'Run multiple branches of your pipeline at the same time. Spin up independent workflow chains that execute in parallel, then merge results — dramatically cutting iteration time.',
+        'Watch each agent complete its task. Review the output at every step, then adjust and re-run — full transparency, full control.',
     },
     {
       icon: (
@@ -87,7 +82,7 @@ export function FeatureGrid() {
       ),
       title: 'Open-Source Control',
       description:
-        'Built on open-source principles. Fork it, extend it, adapt it to your stack. No vendor lock-in, no black-box orchestration — full transparency and community-driven evolution.',
+        'Built on open-source principles. Fork it, extend it, adapt it to your stack. No vendor lock-in, no black-box orchestration.',
     },
   ];
 
@@ -101,9 +96,9 @@ export function FeatureGrid() {
         {/* Section Header with Scroll Reveal */}
         <ScrollReveal>
           <header className="section-header">
-            <h2 id="features-heading">Why LocalChain AI?</h2>
+            <h2 id="features-heading">Why Batonbot?</h2>
             <p className="max-w-xl mx-auto">
-              The local-first AI orchestrator that puts you in control of your workflow, your models, and your code.
+              The local AI agent orchestrator that puts you in control of your tasks, your models, and your output.
             </p>
           </header>
         </ScrollReveal>

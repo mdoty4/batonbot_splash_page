@@ -1,67 +1,47 @@
-/**
- * SEO Metadata Configuration for LocalChain AI Splash Page
- *
- * Centralized metadata object for dynamic meta tags.
- * Used with react-helmet-async to inject SEO tags at runtime.
- */
-
-const siteUrl = 'https://localchainai.com';
+const siteUrl = 'https://batonbot.io';
 const ogImage = `${siteUrl}/og-image.png`;
 
 export const metadata = {
-  // Primary SEO fields
-  title: 'LocalChain AI | Local-First Visual Workflow Orchestrator',
+  title: 'Batonbot | Local AI Agent Orchestrator',
   description:
-    'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
-
-  // Keywords for search engines
+    'Describe any task. Choose your agents. Set the order. Batonbot AI agents complete real work — locally, openly, on your terms.',
   keywords: [
-    'local-first AI workflow orchestrator',
-    'visual workflow chains',
-    'local LLM',
-    'parallel AI workflows',
-    'open-source AI orchestration',
-    'LocalChain AI',
+    'local AI agent orchestrator',
+    'AI task automation',
+    'local LLM agents',
+    'AI workflow orchestration',
+    'open-source AI agent',
+    'Batonbot',
   ].join(', '),
-
-  // Canonical URL
   canonical: siteUrl,
-
-  // OpenGraph (Facebook / LinkedIn)
   og: {
-    title: 'LocalChain AI | Local-First Visual Workflow Orchestrator',
+    title: 'Batonbot | Local AI Agent Orchestrator',
     description:
-      'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
+      'Describe any task. Choose your agents. Set the order. Batonbot AI agents complete real work — locally, openly, on your terms.',
     image: ogImage,
     url: siteUrl,
     type: 'website',
-    siteName: 'LocalChain AI',
+    siteName: 'Batonbot',
   },
-
-  // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'LocalChain AI | Local-First Visual Workflow Orchestrator',
+    title: 'Batonbot | Local AI Agent Orchestrator',
     description:
-      'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
+      'Describe any task. Choose your agents. Set the order. Batonbot AI agents complete real work — locally, openly, on your terms.',
     image: ogImage,
     site: '@micdoty',
     creator: '@micdoty',
   },
-
-  // Additional SEO signals
   robots: 'index, follow',
-  author: 'LocalChain AI Team',
+  author: 'Batonbot Team',
   themeColor: '#8B5CF6',
-
-  // JSON-LD Structured Data (Schema.org)
   jsonLd: {
     softwareApplication: {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
-      name: 'LocalChain AI',
+      name: 'Batonbot',
       description:
-        'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
+        'Describe any task. Choose your agents. Set the order. Batonbot AI agents complete real work — locally, openly, on your terms.',
       operatingSystem: 'macOS',
       applicationCategory: 'DeveloperApplication',
       url: siteUrl,
@@ -72,7 +52,7 @@ export const metadata = {
       },
       author: {
         '@type': 'Organization',
-        name: 'LocalChain AI Team',
+        name: 'Batonbot Team',
         url: siteUrl,
       },
     },

@@ -4,13 +4,13 @@ export function VideoTutorials() {
   const videos = [
     {
       id: 'liJNWYUat9w',
-      title: 'What is Sequencer?',
-      description: 'A quick introduction to Sequencer — visual AI pipelines that turn your workflow from a chat thread into an assembly line.',
+      title: 'What is Batonbot?',
+      description: 'A quick introduction to Batonbot — local AI agents that complete real tasks in the order you choose.',
     },
     {
       id: '4D27meUFiy0',
-      title: 'Using Sequencer with Openclaw',
-      description: 'A hands-on tutorial showing how to connect Sequencer with Openclaw for a real-world multi-agent workflow.',
+      title: 'Using Batonbot with Multiple Agents',
+      description: 'A hands-on tutorial showing how to chain multiple agents together for a real-world multi-step workflow.',
     },
   ];
 
@@ -24,9 +24,9 @@ export function VideoTutorials() {
         {/* Section Header */}
         <ScrollReveal>
           <header className="section-header">
-            <h2 id="tutorials-heading">Watch It in Action</h2>
+            <h2 id="tutorials-heading">See Batonbot in Action</h2>
             <p className="max-w-xl mx-auto">
-              See how visual AI pipelines turn complex workflows into an assembly line — from first install to running your first sequence.
+              Watch how Batonbot agents complete real tasks — from first install to running your first orchestrated workflow.
             </p>
           </header>
         </ScrollReveal>

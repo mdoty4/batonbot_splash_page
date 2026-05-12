@@ -27,7 +27,7 @@ export function SeoHead() {
       <meta property="og:title" content={metadata.og.title} />
       <meta property="og:description" content={metadata.og.description} />
       <meta property="og:image" content={metadata.og.image} />
-      <meta property="og:image:alt" content="Visual AI pipeline editor for multi-agent coordination — LocalChain AI workflow orchestrator" />
+      <meta property="og:image:alt" content="AI agent orchestrator — Batonbot completes real work, locally" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:url" content={metadata.og.url} />
@@ -39,7 +39,7 @@ export function SeoHead() {
       <meta name="twitter:title" content={metadata.twitter.title} />
       <meta name="twitter:description" content={metadata.twitter.description} />
       <meta name="twitter:image" content={metadata.twitter.image} />
-      <meta name="twitter:image:alt" content="Visual AI pipeline editor for multi-agent coordination — LocalChain AI workflow orchestrator" />
+      <meta name="twitter:image:alt" content="AI agent orchestrator — Batonbot completes real work, locally" />
       <meta name="twitter:site" content={metadata.twitter.site} />
       <meta name="twitter:creator" content={metadata.twitter.creator} />
 

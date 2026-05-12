@@ -7,9 +7,9 @@ const RUNNING = 'running';
 const DONE = 'done';
 
 const pipelineTasks = [
-  { id: 1, name: 'Model', icon: 'model' },
-  { id: 2, name: 'Agent', icon: 'agent' },
-  { id: 3, name: 'Script', icon: 'script' },
+  { id: 1, name: 'Research', icon: 'model' },
+  { id: 2, name: 'Draft', icon: 'agent' },
+  { id: 3, name: 'Review', icon: 'script' },
 ];
 
 // Status badge component with animation
@@ -54,7 +54,9 @@ function PipelineNode({ task, status, isActive }) {
       </svg>
     ),
     script: (
-      <img src="/logo.png" alt="Script" className="h-5 w-5" />
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-teal">
+        <polygon points="6,4 20,12 6,20" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
+      </svg>
     ),
   };
 
@@ -206,7 +208,7 @@ export function HeroSection() {
             >
               <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
               <span className="text-label-xs text-text-secondary uppercase tracking-widest">
-                Open-Source &middot; Local-First
+                Local-First &middot; Agent-Powered
               </span>
             </motion.div>
 
@@ -217,10 +219,14 @@ export function HeroSection() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-hero-xl text-text-primary mb-6"
             >
-              LocalChain AI:
+              BatonBot:
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-accent-light to-teal">
-                Local-first orchestration for parallel AI workflow chains.
+                Orchestrate
+              </span>
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-accent-light to-teal">
+                Your Life
               </span>
             </motion.h1>
 
@@ -231,8 +237,7 @@ export function HeroSection() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-body-base text-text-secondary mb-8 max-w-lg"
             >
-              Chain together local LLMs, frontier models, agents, tools, and scripts into composable workflow chains.
-              LocalChain AI orchestrates them in parallel—so your data stays yours, and your pipeline never sleeps.
+              Describe any task to an AI agent, and trust that it will complete it — not just chat about it. Chain multiple agents together, in the exact order you choose, and watch real work get done.
             </motion.p>
 
             {/* CTAs */}
@@ -242,13 +247,13 @@ export function HeroSection() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="flex flex-wrap items-center gap-4 mb-10"
             >
-              <a href="https://github.com/mdoty4/localchainai" className="btn-primary">
+              <a href="https://github.com/mdoty4/batonbot_splash_page" className="btn-primary">
                 Get Started
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="https://github.com/mdoty4/localchainai" className="btn-secondary">
+              <a href="https://github.com/mdoty4/batonbot_splash_page" className="btn-secondary">
                 <svg className="mr-2 w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
@@ -288,7 +293,7 @@ export function HeroSection() {
             <div
               className="relative card p-6 space-y-4"
               role="img"
-              aria-label="Visual AI workflow editor for parallel pipeline orchestration: three-node workflow showing Model, Agent, and Script nodes with animated status badges transitioning from Pending to Running to Done"
+              aria-label="Visual AI workflow editor for parallel pipeline orchestration: three-node workflow showing Research, Draft, and Review nodes with animated status badges transitioning from Pending to Running to Done"
             >
               {/* Window chrome */}
               <div className="flex items-center justify-between mb-4">
@@ -296,7 +301,7 @@ export function HeroSection() {
                   <span className="w-3 h-3 rounded-full bg-error/70" />
                   <span className="w-3 h-3 rounded-full bg-warning/70" />
                   <span className="w-3 h-3 rounded-full bg-success/70" />
-                  <span className="ml-3 text-label-xs text-text-tertiary font-mono">localchain.canvas</span>
+                  <span className="ml-3 text-label-xs text-text-tertiary font-mono">batonbot.canvas</span>
                 </div>
                 {/* Replay button */}
                 <button
@@ -368,7 +373,7 @@ function HeroInstallationSnippet() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('git clone https://github.com/mdoty4/localchainai.git && cd localchainai && npm install');
+    navigator.clipboard.writeText('git clone https://github.com/mdoty4/batonbot_splash_page.git && cd batonbot && npm install');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -377,7 +382,7 @@ function HeroInstallationSnippet() {
     <div className="inline-flex items-center gap-3 bg-background-secondary border border-border rounded-code px-4 py-3 shadow-code-block group">
       <span className="text-teal text-code-xs font-mono">$</span>
       <code className="text-text-primary text-code-xs font-mono">
-        git clone https://github.com/mdoty4/localchainai.git && cd localchainai && npm install
+        git clone https://github.com/mdoty4/batonbot_splash_page.git && cd batonbot && npm install
       </code>
       <motion.button
         whileHover={{ scale: 1.1 }}
