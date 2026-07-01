@@ -7,8 +7,8 @@ const nowNext = [
   {
     version: 'v3.2',
     codename: 'Portable',
-    status: 'done-mostly',
-    track: 'Now',
+    status: 'done',
+    track: 'Shipped',
     headline: 'Download, unzip, double-click. No git, no npm, no Python required.',
     items: [
       { text: 'Portable Windows ZIP build with bundled Node.js runtime (v3.2.2)', done: true },
@@ -17,21 +17,24 @@ const nowNext = [
       { text: 'macOS Apple Silicon (arm64) portable with double-clickable start.command (v3.2.3)', done: true },
       { text: 'README install-first rewrite — Portable is Option A', done: true },
     ],
-    footnote: 'Intel Mac / Linux portable variants, install GIF, and launch announcement deferred — moving on to v3.3.',
   },
 
   {
     version: 'v3.3',
     codename: 'Ingress',
-    status: 'planned',
-    track: 'Next',
-    headline: 'Anything can drop a task into BatonBot — webhooks, files, scripts, other agents.',
+    status: 'in-progress',
+    track: 'Now',
+    headline: 'Anything can drop a task into BatonBot — plus finishing portable reach across platforms.',
     items: [
       { text: 'Generic ingress webhook: POST /api/projects/:id/ingest', done: false },
       { text: 'File-based ingress: drop a *.task.md or *.task.json in .batonbot/inbox/', done: false },
       { text: 'Documented JSON Schema for the task format (docs/task-schema.md)', done: false },
       { text: 'Per-project bearer-token auth for the ingress endpoint', done: false },
       { text: 'Manual import UI for one-off bulk imports', done: false },
+      { text: 'macOS Intel (x64) portable variant', done: false },
+      { text: 'Linux portable variant', done: false },
+      { text: '30-second install GIF for the README', done: false },
+      { text: 'Launch announcement post (HN, r/LocalLLaMA, X)', done: false },
     ],
   },
 ];
