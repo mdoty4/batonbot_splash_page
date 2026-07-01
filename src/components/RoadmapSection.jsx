@@ -7,17 +7,19 @@ const nowNext = [
   {
     version: 'v3.2',
     codename: 'Portable',
-    status: 'in-progress',
+    status: 'done-mostly',
     track: 'Now',
     headline: 'Download, unzip, double-click. No git, no npm, no Python required.',
     items: [
-      { text: 'Portable Windows ZIP build with bundled Node.js runtime', done: false },
-      { text: 'Config folder lives next to the executable (prompts.json, .env, logs/)', done: false },
-      { text: 'macOS + Linux portable variants', done: false },
-      { text: 'README install-first rewrite + 30-second install GIF', done: false },
-      { text: 'Launch announcement post (HN, r/LocalLLaMA, X)', done: false },
+      { text: 'Portable Windows ZIP build with bundled Node.js runtime (v3.2.2)', done: true },
+      { text: 'Config folder lives next to the executable (prompts.json, .env, logs/)', done: true },
+      { text: 'Windows Cline stdin-hang bug fixed — Cline works on Windows 10/11 (v3.2.2)', done: true },
+      { text: 'macOS Apple Silicon (arm64) portable with double-clickable start.command (v3.2.3)', done: true },
+      { text: 'README install-first rewrite — Portable is Option A', done: true },
     ],
+    footnote: 'Intel Mac / Linux portable variants, install GIF, and launch announcement deferred — moving on to v3.3.',
   },
+
   {
     version: 'v3.3',
     codename: 'Ingress',
@@ -49,6 +51,11 @@ function StatusBadge({ status }) {
   const map = {
     done: {
       label: 'Shipped',
+      className: 'border-teal/40 bg-teal/10 text-teal',
+      dot: <span className="w-1.5 h-1.5 rounded-full bg-teal" aria-hidden="true" />,
+    },
+    'done-mostly': {
+      label: 'Shipped*',
       className: 'border-teal/40 bg-teal/10 text-teal',
       dot: <span className="w-1.5 h-1.5 rounded-full bg-teal" aria-hidden="true" />,
     },
@@ -123,6 +130,11 @@ function MilestoneCard({ milestone }) {
           </li>
         ))}
       </ul>
+      {milestone.footnote && (
+        <p className="mt-4 pt-4 border-t border-border text-label-xs text-text-tertiary italic">
+          <span aria-hidden="true">* </span>{milestone.footnote}
+        </p>
+      )}
     </article>
   );
 }
