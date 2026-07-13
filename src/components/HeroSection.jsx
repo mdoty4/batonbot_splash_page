@@ -62,10 +62,12 @@ export function HeroSection() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-body-base text-text-secondary mb-4 max-w-lg"
             >
-              Chain <span className="text-text-primary font-medium">Aider</span>,{' '}
+              Chain <span className="text-text-primary font-medium">native agents</span>,{' '}
+              <span className="text-text-primary font-medium">Aider</span>,{' '}
               <span className="text-text-primary font-medium">Cline</span>, and{' '}
               <span className="text-text-primary font-medium">local LLMs</span> into repeatable
-              pipelines. Drag-and-drop a Kanban board, hit start, and watch real work get done.
+              pipelines. Drag-and-drop a Kanban board, hit start, and watch real work get done —
+              even straight from a Jira ticket.
             </motion.p>
 
             {/* Mission line */}
@@ -75,7 +77,8 @@ export function HeroSection() {
               transition={{ delay: 0.45, duration: 0.6 }}
               className="text-body-sm text-text-tertiary italic mb-8 max-w-lg"
             >
-              Built to free you from your computer — by making your computer work for you.
+              Like Jira — but your agents work the tickets. Built to free you from your
+              computer, by making your computer work for you.
             </motion.p>
 
             {/* CTAs */}

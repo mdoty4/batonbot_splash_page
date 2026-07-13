@@ -1,7 +1,7 @@
 {
-  "name": "Batonbot | Local AI Agent Orchestrator",
-  "short_name": "Batonbot",
-  "description": "The multipurpose, agnostic agentic runtime for personal and team AI orchestration. Connect your favorite local AI models and cloud APIs to build powerful, autonomous agent pipelines.",
+  "name": "BatonBot | Visual Orchestrator for AI Agent Pipelines",
+  "short_name": "BatonBot",
+  "description": "BatonBot is the visual orchestrator for AI agent pipelines. Chain native baton-code agents, Aider, Cline, and local LLMs into repeatable, autonomous workflows — with Jira tickets and webhooks flowing straight onto the board.",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#8B5CF6",

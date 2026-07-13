@@ -9,28 +9,28 @@
     <meta name="theme-color" content="#8B5CF6" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BatonBot | Visual Orchestrator for AI Agent Pipelines</title>
-    <meta name="description" content="BatonBot is the visual orchestrator for AI agent pipelines. Chain Aider, Cline, and local LLMs into repeatable, autonomous workflows — and let your computer work for you." />
-    <meta name="keywords" content="BatonBot, AI agent orchestrator, visual AI workflow, AI agent pipeline, Aider orchestration, Cline orchestration, LM Studio, local LLM agent, Kanban AI workflow, OpenAI compatible proxy, agent chaining, MCP agent server, OpenClaw, open source AI agent" />
+    <meta name="description" content="BatonBot is a kanban board and orchestrator for AI coding agents — like Jira, but your agents work the tickets. Chain native baton-code agents, Aider, Cline, and local LLMs into repeatable, autonomous workflows." />
+    <meta name="keywords" content="BatonBot, AI agent orchestrator, visual AI workflow, AI agent pipeline, Aider orchestration, Cline orchestration, LM Studio, local LLM agent, Kanban AI workflow, kanban board for AI agents, Jira for AI agents, AI agent task manager, run multiple AI coding agents, OpenAI compatible proxy, agent chaining, Jira automation, Jira AI agent, task ingress API, portable AI orchestrator, MCP agent server, OpenClaw, open source AI agent" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Michael Doty" />
-    <link rel="canonical" href="https://batonbot.io" />
+    <link rel="canonical" href="https://batonbot.com" />
 
     <!-- OpenGraph Meta Tags -->
     <meta property="og:title" content="BatonBot | Visual Orchestrator for AI Agent Pipelines" />
-    <meta property="og:description" content="Chain Aider, Cline, and local LLMs into repeatable, autonomous workflows. Free yourself from your computer — make your computer work for you." />
-    <meta property="og:image" content="https://batonbot.io/og-image.png" />
+    <meta property="og:description" content="A kanban board for AI coding agents — like Jira, but your agents work the tickets. Chain native agents, Aider, Cline, and local LLMs into repeatable, autonomous workflows." />
+    <meta property="og:image" content="https://batonbot.com/og-image.png" />
     <meta property="og:image:alt" content="BatonBot — Visual Orchestrator for AI Agent Pipelines" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://batonbot.io" />
+    <meta property="og:url" content="https://batonbot.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="BatonBot" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="BatonBot | Visual Orchestrator for AI Agent Pipelines" />
-    <meta name="twitter:description" content="Chain Aider, Cline, and local LLMs into repeatable, autonomous workflows. Free yourself from your computer — make your computer work for you." />
-    <meta name="twitter:image" content="https://batonbot.io/og-image.png" />
+    <meta name="twitter:description" content="A kanban board for AI coding agents — like Jira, but your agents work the tickets. Chain native agents, Aider, Cline, and local LLMs into repeatable workflows." />
+    <meta name="twitter:image" content="https://batonbot.com/og-image.png" />
     <meta name="twitter:image:alt" content="BatonBot — Visual Orchestrator for AI Agent Pipelines" />
     <meta name="twitter:site" content="@micdoty" />
     <meta name="twitter:creator" content="@micdoty" />
@@ -40,11 +40,22 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "BatonBot",
-      "description": "BatonBot is the visual orchestrator for AI agent pipelines. Chain Aider, Cline, and local LLMs into repeatable, autonomous workflows.",
+      "description": "BatonBot is a kanban board and orchestrator for AI coding agents — like Jira, but your agents work the tickets. Chain native baton-code agents, Aider, Cline, and local LLMs into repeatable, autonomous workflows.",
       "operatingSystem": "macOS, Windows, Linux",
       "applicationCategory": "DeveloperApplication",
-      "url": "https://batonbot.io",
+      "softwareVersion": "3.4.0",
+      "url": "https://batonbot.com",
       "license": "https://opensource.org/licenses/MIT",
+      "featureList": [
+        "Drag-and-drop Kanban task board for AI agent sequencing",
+        "Native baton-code agents plus Aider, Cline, and Telegram routing",
+        "Hybrid LLM support — LM Studio locally or any OpenAI-compatible API",
+        "Real-time orchestration via SSE with Play, Pause, and Cancel",
+        "Ingress API — POST tasks onto the board from webhooks, CI, or bots",
+        "Jira channel — tickets become cards, results are commented back",
+        "Portable no-install bundles for Windows x64 and macOS Apple Silicon",
+        "Local-first with transparent JSONL logging"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -56,6 +67,71 @@
         "url": "https://github.com/mdoty4"
       },
       "sameAs": ["https://github.com/mdoty4/batonbot"]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an AI agent orchestrator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An AI agent orchestrator coordinates multiple AI agents and LLM calls into a repeatable workflow. Instead of chatting with one agent at a time, BatonBot lets you design a sequence of tasks on a Kanban board, assign the best agent to each step (baton-code, Aider, Cline, or Telegram), and execute the entire pipeline with one click while tracking live status."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I run AI coding agents with a local LLM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. BatonBot is local-first: route all requests through LM Studio (or any local OpenAI-compatible server) for privacy and zero API cost, or connect to cloud APIs when you want maximum intelligence. Each project can have its own LLM configuration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I automate Jira tickets with AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BatonBot's Jira channel polls Jira Cloud over outbound HTTPS — no webhook, tunnel, or public URL required. File a ticket, label it fix-now, and BatonBot imports it as a card, runs an agent on it, comments the result back on the ticket, and transitions it to Done. Trust guards (assignee guard, autostart cap, first-run watermark) are on by default."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is BatonBot free and open source?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. BatonBot is free and MIT-licensed. Install from source with npm, run it with Docker, or download a portable no-install bundle for Windows x64 or macOS Apple Silicon — unzip and double-click, no Node or git required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does BatonBot work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BatonBot runs entirely on your machine and can operate against a fully local model via LM Studio. A strict local-only mode (hard-failing any request that would leave the machine) is on the roadmap for v3.5."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is BatonBot like Jira for AI agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That's the idea — BatonBot is a project management board where AI agents work the tickets. Tasks live as cards in Pending, Queue, and Completed columns; you assign an agent to each card and hit Start. It even connects to real Jira: tickets flow onto the board, and results are commented back automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the best way to run multiple AI coding agents at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use an orchestrator instead of juggling chat windows. With BatonBot you queue tasks on a kanban board, assign a different agent to each (baton-code, Aider, Cline), and execute the sequence in one click. BatonBot manages the hand-off between agents and streams live status for every task."
+          }
+        }
+      ]
     }
     </script>
   </head>

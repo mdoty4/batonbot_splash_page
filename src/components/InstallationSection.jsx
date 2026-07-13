@@ -3,7 +3,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ScrollReveal } from './ScrollReveal';
 
 const TABS = {
+  portable: {
+    label: 'Portable',
+    output: [
+      '✓ No Node, no npm, no git required',
+      '✓ Settings, projects, and logs live in config/ next to the launcher',
+      '✓ Server running on http://localhost:4321',
+    ],
+    commands: [
+      { comment: '# 1. Download the bundle for your platform from the Releases page', cmd: 'open https://github.com/mdoty4/batonbot/releases' },
+      { comment: '# 2. Unzip it (Windows x64: batonbot-portable-win-x64.zip · macOS Apple Silicon: batonbot-portable-mac-arm64.zip)', cmd: 'unzip batonbot-portable-*.zip' },
+      { comment: '# 3. Double-click the launcher (start.cmd on Windows · start.command on macOS)', cmd: './start.command  # or start.cmd on Windows' },
+    ],
+  },
   npm: {
+
     label: 'npm',
     output: [
       '✓ Dependencies installed',
@@ -29,7 +43,7 @@ const TABS = {
     ],
     commands: [
       { comment: '# Clone the repository',                       cmd: 'git clone https://github.com/mdoty4/batonbot.git && cd batonbot' },
-      { comment: '# Create your .env (PORT, LM_STUDIO_URL)',     cmd: 'cp .env.example .env  # or create manually' },
+      { comment: '# Create your .env (PORT, LM_STUDIO_URL)',     cmd: 'echo "PORT=4321\\nLM_STUDIO_URL=http://localhost:1234/v1" > .env' },
       { comment: '# Build and start in background',              cmd: 'docker compose up --build -d' },
       { comment: '# Follow logs (optional)',                     cmd: 'docker compose logs -f' },
     ],
@@ -37,7 +51,7 @@ const TABS = {
 };
 
 export function InstallationSection() {
-  const [tab, setTab] = useState('npm');
+  const [tab, setTab] = useState('portable');
   const [copied, setCopied] = useState(false);
 
   const active = TABS[tab];
@@ -60,7 +74,8 @@ export function InstallationSection() {
           <header className="section-header">
             <h2 id="installation-heading">Up and running in under a minute.</h2>
             <p className="max-w-xl mx-auto">
-              Clone with npm, or run the full stack with one Docker command. No cloud account, no signup, no telemetry.
+              Grab a portable bundle (no install), clone with npm, or run the full stack with
+              one Docker command. No cloud account, no signup, no telemetry.
             </p>
           </header>
         </ScrollReveal>
@@ -169,7 +184,8 @@ export function InstallationSection() {
             </motion.div>
 
             <p className="mt-6 text-center text-body-sm text-text-tertiary">
-              Cross-platform: macOS · Linux · Windows (native or via WSL2).
+              Cross-platform: macOS · Linux · Windows (native or via WSL2). Portable bundles
+              available for Windows x64 and macOS Apple Silicon.
             </p>
           </div>
         </ScrollReveal>

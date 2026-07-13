@@ -12,7 +12,7 @@ export function BoardShowcase() {
       <div className="max-w-page mx-auto">
         <ScrollReveal>
           <header className="section-header">
-            <h2 id="board-heading">One board. Every agent. Every status. Live.</h2>
+            <h2 id="board-heading">A kanban board for AI agents. Every status, live.</h2>
             <p className="max-w-2xl mx-auto">
               The BatonBot board gives you a single visual surface for orchestration —
               drop cards from the agent palette, reorder the queue, and watch live state

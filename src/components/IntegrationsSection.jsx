@@ -32,6 +32,13 @@ const integrations = [
     accent: 'text-accent-light',
   },
   {
+    name: 'Jira',
+    tagline: 'Ticket → fix → comment back',
+    href: 'https://github.com/mdoty4/batonbot/blob/main/docs/jira-setup.md',
+    accent: 'text-teal',
+  },
+
+  {
     name: 'Docker',
     tagline: 'One-command deploy',
     href: 'https://docs.docker.com/compose/',

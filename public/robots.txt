@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://batonbot.io/sitemap.xml
+Sitemap: https://batonbot.com/sitemap.xml

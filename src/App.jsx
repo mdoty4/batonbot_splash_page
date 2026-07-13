@@ -7,6 +7,7 @@ import { HowItWorks } from './components/HowItWorks';
 import { VideoTutorials } from './components/VideoTutorials';
 import { InstallationSection } from './components/InstallationSection';
 import { RoadmapSection } from './components/RoadmapSection';
+import { FaqSection } from './components/FaqSection';
 import { ClosingCta } from './components/ClosingCta';
 import { Footer } from './components/Footer';
 import { SeoHead } from './components/SeoHead';
@@ -26,6 +27,7 @@ export default function App() {
           <VideoTutorials />
           <InstallationSection />
           <RoadmapSection />
+          <FaqSection />
           <ClosingCta />
         </main>
         <Footer />

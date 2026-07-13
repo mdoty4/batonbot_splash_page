@@ -5,50 +5,48 @@ import { ScrollReveal } from './ScrollReveal';
 
 const nowNext = [
   {
-    version: 'v3.2',
-    codename: 'Portable',
+    version: 'v3.3 – v3.4',
+    codename: 'Ingress + Jira Channel',
     status: 'done',
     track: 'Shipped',
-    headline: 'Download, unzip, double-click. No git, no npm, no Python required.',
+    headline:
+      'Anything can drop a task into BatonBot — and Jira tickets get picked up, fixed, and commented back automatically.',
     items: [
-      { text: 'Portable Windows ZIP build with bundled Node.js runtime (v3.2.2)', done: true },
-      { text: 'Config folder lives next to the executable (prompts.json, .env, logs/)', done: true },
-      { text: 'Windows Cline stdin-hang bug fixed — Cline works on Windows 10/11 (v3.2.2)', done: true },
-      { text: 'macOS Apple Silicon (arm64) portable with double-clickable start.command (v3.2.3)', done: true },
-      { text: 'README install-first rewrite — Portable is Option A', done: true },
+      { text: 'Generic ingress webhook: POST /api/projects/:id/ingest with per-project bearer-token auth (v3.3)', done: true },
+      { text: 'Documented JSON Schema for the task format (docs/task-schema.md) (v3.3)', done: true },
+      { text: 'Jira polling channel: tickets → cards, label routing (fix-now auto-runs), no webhook or tunnel needed (v3.4)', done: true },
+      { text: 'Trust guards: assignee guard, autostart cap, first-run watermark (v3.4)', done: true },
+      { text: 'Full lifecycle comments back to Jira + auto-transition to Done (v3.4)', done: true },
     ],
   },
 
   {
-    version: 'v3.3',
-    codename: 'Ingress',
+    version: 'v3.5',
+    codename: 'Local-First + Outputs',
     status: 'in-progress',
     track: 'Now',
-    headline: 'Anything can drop a task into BatonBot — plus finishing portable reach across platforms.',
+    headline:
+      'Run the whole loop on a local model with zero cloud calls, and get durable, machine-readable results out of every card.',
     items: [
-      { text: 'Generic ingress webhook: POST /api/projects/:id/ingest', done: false },
-      { text: 'File-based ingress: drop a *.task.md or *.task.json in .batonbot/inbox/', done: false },
-      { text: 'Documented JSON Schema for the task format (docs/task-schema.md)', done: false },
-      { text: 'Per-project bearer-token auth for the ingress endpoint', done: false },
-      { text: 'Manual import UI for one-off bulk imports', done: false },
-      { text: 'macOS Intel (x64) portable variant', done: false },
-      { text: 'Linux portable variant', done: false },
-      { text: '30-second install GIF for the README', done: false },
-      { text: 'Launch announcement post (HN, r/LocalLLaMA, X)', done: false },
+      { text: 'Strict Local-Only Mode (BATONBOT_LOCAL_ONLY=1) — hard-fail any request that would leave the machine', done: false },
+      { text: 'Results-Out — each completed card writes results/<cardId>.result.json + .result.md into the project\u2019s repo', done: false },
+      { text: 'Previous-task context for Cline/Aider — chained cards can see what the prior card did', done: false },
+      { text: 'Carried forward: macOS Intel (x64) + Linux portable variants', done: false },
+      { text: 'Carried forward: file-based ingress (.batonbot/inbox/) + manual import UI', done: false },
     ],
   },
 ];
 
 const later = [
-  { version: 'v3.4', codename: 'Local-First + Outputs', description: 'Strict local-only mode. Per-card results written as Markdown + JSON in the project\u2019s repo.' },
-  { version: 'v3.5', codename: 'Trust & Isolation', description: 'Per-card git worktrees with diff / merge / discard. ask_user tool. Approval gates. Restart recovery.' },
+  { version: 'v3.5.1', codename: 'Trust & Isolation', description: 'Per-card git worktrees with diff / merge / discard. ask_user tool. Approval gates. Restart recovery.' },
   { version: 'v3.6', codename: 'GitHub Loop', description: 'Issue \u2192 triage \u2192 fix \u2192 PR, end to end, via a GitHub App.' },
   { version: 'v3.6.1+', codename: 'Native Specialists', description: 'baton-summarizer, baton-docs-writer, baton-test-writer, baton-search, plus a baton-moltbook-poster agent for the agent social network.' },
   { version: 'v3.7', codename: 'Mission Control', description: 'Multi-project dashboard. Cost telemetry. Pipeline templates.' },
-  { version: 'v3.8', codename: 'Open Substrate', description: 'MCP server. Auto-routing rules. Additional ingress adapters (Linear, Email, Slack, Jira, Moltbook).' },
+  { version: 'v3.8', codename: 'Open Substrate', description: 'MCP server. Auto-routing rules. Additional ingress adapters (Linear, Email, Slack, Moltbook). Jira two-way sync.' },
   { version: 'v3.9', codename: 'Machine Substrate', description: 'API tokens. Outbound webhooks. OpenAPI spec. Headless mode.' },
   { version: 'v3.10', codename: 'Maturity', description: 'Per-repo BATONBOT.md policy file. Architecture docs. Public comparison docs.' },
 ];
+
 
 function StatusBadge({ status }) {
   const map = {

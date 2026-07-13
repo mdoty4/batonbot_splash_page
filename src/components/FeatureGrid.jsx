@@ -77,7 +77,30 @@ export function FeatureGrid() {
       description:
         'Point Cline or any OpenAI-compatible client at http://localhost:4321/v1 and BatonBot routes the call through your configured backend — local or cloud.',
     },
+    {
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-teal" aria-hidden="true">
+          <path d="M14 4v12M14 16l-4-4M14 16l4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M5 17v4a2 2 0 002 2h14a2 2 0 002-2v-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        </svg>
+      ),
+      title: 'Ingress API',
+      description:
+        'Anything can drop a task onto the board — Telegram bots, CI pipelines, webhooks, other agents. POST to /api/projects/:id/ingest with a per-project bearer token.',
+    },
+    {
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="text-accent" aria-hidden="true">
+          <rect x="4" y="4" width="20" height="20" rx="3" stroke="currentColor" strokeWidth="1.5"/>
+          <path d="M9 14l3.5 3.5L19 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      ),
+      title: 'Jira Channel',
+      description:
+        'File a ticket → BatonBot picks it up, runs an agent, and comments the result back — then transitions it to Done. Polling-based: no webhook, no tunnel, works behind any firewall. Trust guards on by default.',
+    },
   ];
+
 
   return (
     <section

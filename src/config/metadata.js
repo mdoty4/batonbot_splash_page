@@ -1,8 +1,8 @@
-const siteUrl = 'https://batonbot.io';
+const siteUrl = 'https://batonbot.com';
 const ogImage = `${siteUrl}/og-image.png`;
 
 const description =
-  'BatonBot is the visual orchestrator for AI agent pipelines. Chain Aider, Cline, and local LLMs into repeatable, autonomous workflows — and let your computer work for you.';
+  'BatonBot is a kanban board and orchestrator for AI coding agents — like Jira, but your agents work the tickets. Chain native baton-code agents, Aider, Cline, and local LLMs into repeatable, autonomous workflows.';
 
 export const metadata = {
   title: 'BatonBot | Visual Orchestrator for AI Agent Pipelines',
@@ -17,8 +17,16 @@ export const metadata = {
     'LM Studio',
     'local LLM agent',
     'Kanban AI workflow',
+    'kanban board for AI agents',
+    'Jira for AI agents',
+    'AI agent task manager',
+    'run multiple AI coding agents',
     'OpenAI compatible proxy',
     'agent chaining',
+    'Jira automation',
+    'Jira AI agent',
+    'task ingress API',
+    'portable AI orchestrator',
     'MCP agent server',
     'OpenClaw',
     'open source AI agent',
@@ -51,7 +59,18 @@ export const metadata = {
       description,
       operatingSystem: 'macOS, Windows, Linux',
       applicationCategory: 'DeveloperApplication',
+      softwareVersion: '3.4.0',
       url: siteUrl,
+      featureList: [
+        'Drag-and-drop Kanban task board for AI agent sequencing',
+        'Native baton-code agents plus Aider, Cline, and Telegram routing',
+        'Hybrid LLM support — LM Studio locally or any OpenAI-compatible API',
+        'Real-time orchestration via SSE with Play, Pause, and Cancel',
+        'Ingress API — POST tasks onto the board from webhooks, CI, or bots',
+        'Jira channel — tickets become cards, results are commented back',
+        'Portable no-install bundles for Windows x64 and macOS Apple Silicon',
+        'Local-first with transparent JSONL logging',
+      ],
       license: 'https://opensource.org/licenses/MIT',
       offers: {
         '@type': 'Offer',
