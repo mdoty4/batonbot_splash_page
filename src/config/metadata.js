@@ -1,4 +1,4 @@
-const siteUrl = 'https://batonbot.com';
+const siteUrl = 'https://www.batonbot.com';
 const ogImage = `${siteUrl}/og-image.png`;
 
 const description =
